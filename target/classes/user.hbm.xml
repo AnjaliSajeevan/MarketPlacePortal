@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<hibernate-mapping>
+    <class name="com.mycompany.pojo.User" table="user">
+        <id name="userid" column="userid" type="int">
+            <generator class="native"/>
+        </id>
+        <property name="firstName" column="firstName" type="string"/> 
+        <property name="lastName" column="lastName" type="string"/> 
+        <property name="role" column="role" type="string"/> 
+        <property name="email" column="email" type="string"/> 
+        <property name="password" column ="password" type="string"/>
+         <property name="contact" column="contact" type="string"/> 
+        <property name="enabled" column="enabled" type="boolean"/> 
+         <one-to-one name="cart" lazy ="false" class="com.mycompany.pojo.Cart" />
+        
+    </class>
+</hibernate-mapping>

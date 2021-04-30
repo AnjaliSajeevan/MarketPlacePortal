@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<hibernate-mapping>
+    <class name="com.mycompany.pojo.CartItem" table="cartitem">
+        <id name="cartItemid" column="cartItemid" type="int">
+            <generator class="native"/>
+        </id>
+        <property name="quantity" column="quantity" type="int"/> 
+         <property name="totalPrice" column="totalPrice" type="double"/> 
+         <property name="orderid" column="orderid" type="int"/>   
+        <many-to-one name="cart" class="com.mycompany.pojo.Cart" lazy="false" column="cartid" foreign-key="fk_cart_cartItems"/> 
+        <many-to-one name="product" class="com.mycompany.pojo.Product" column="product" foreign-key="fk_product_cartItems"/>   
+
+    </class>
+</hibernate-mapping>

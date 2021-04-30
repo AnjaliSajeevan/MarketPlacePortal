@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+"http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<hibernate-mapping>
+    <class name="com.mycompany.pojo.Address" table="address">
+        <id name="addressid" column="addressid" type="int">
+            <generator class="native"/>
+        </id>
+        <property name="apartment" column="apartment" type="string"/> 
+        <property name="street" column="street" type="string"/> 
+        <property name="city" column="city" type="string"/> 
+        <property name="state" column="state" type="string"/> 
+        <property name="country" column="country" type="string"/> 
+        <property name="zipCode" column="zipCode" type="string"/> 
+        <property name="shipping" column="shipping" type="boolean"/> 
+        <property name="billing" column="billing" type="boolean"/> 
+        <many-to-one name="user" class="com.mycompany.pojo.User" column="userid" foreign-key="fk_address_user"/>
+        
+    </class>
+</hibernate-mapping>
