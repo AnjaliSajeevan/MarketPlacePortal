@@ -2,7 +2,7 @@
 
 The marketplace portal – Skye, is a Spring MVC web application. The application uses hibernate for database interactions with MySQL database. Users can register either as a seller or a customer. Depending on their role, various tasks can be performed. Seller can enlist their products in the application and customer can buy the products and track their orders.
 
-![Skye - A Marketplace Portal ](demo/project.gif)
+![Skye - A Marketplace Portal ](demo/p2.jpg)
 
 ## Technologies
 
