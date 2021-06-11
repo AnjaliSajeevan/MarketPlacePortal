@@ -9,13 +9,17 @@ The marketplace portal – Skye, is a Spring MVC web application. The applicatio
 Backend
 - Spring MVC
 - Hibernate
--Ajax
+- Ajax
+
 Frontend
+
 -  HTML
 - CSS
 - JavaScript
 - Bootstrap – A bootstrap template was used as a reference from startbootstrap.com.
+
 Database
+
 - MySQL
 
 ## Requirement
@@ -35,14 +39,20 @@ Database
 There are two user roles in this project:
 - Customer
 - Seller
+
 Common Tasks:
+
 - The customer and seller have to first register with the Skye web application, then they can login to get access to their respective pages.
+
 Customer Tasks:
+
 -  The customers can view all products and search products based on category.
 -  They can add products to the cart and place an order for the products in the cart.
 -  View all the previous orders and view each order details including the products ordered separately. This list can also be generated as a pdf.
 - The order tracking details are visible.
+
 Seller Tasks:
+
 - The sellers can perform CRUD operation on categories/departments.
 -  They can enlist products in the marketplace. They can perform CRUD operation on the enlisted products. The quantity of products keeps reducing based on the orders and can be updated by the seller.
 -  View the list of products enlisted by the specific seller.
@@ -65,8 +75,8 @@ Seller Tasks:
 -  HQL and criteria query was used.
 - Products by all sellers will be visible by the customer.
 - Each seller can only see orders for their enlisted products and not the complete list of order items in one order by the customer.
--  Once an order is placed the cart is cleared.
--  CRUD operations for products and departments.
--  Add and update for addresses and user contact details.
+- Once an order is placed the cart is cleared.
+- CRUD operations for products and departments.
+- Add and update for addresses and user contact details.
 
 
