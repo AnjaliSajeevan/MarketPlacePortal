@@ -27,13 +27,14 @@ Database
 - Tomcat
 
 ## Programming Language 
-- Java SE
+- Java 
+- HTML
+- CSS
+- JavaScript
+- SQL
 
 ## Development Tools
 - Netbeans IDE
-
-## FrameWork
-- SpringMVC
 
 ## Roles and Tasks Performed
 There are two user roles in this project:
