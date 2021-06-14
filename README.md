@@ -9,7 +9,7 @@ The marketplace portal – Skye, is a Spring MVC web application. The applicatio
 Backend
 - Spring MVC
 - Hibernate
-- Ajax
+- AJAX
 
 Frontend
 
